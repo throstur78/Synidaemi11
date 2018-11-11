@@ -1,4 +1,4 @@
-const API_URL = 'http://apis.is/car?number=';
+const API_URL = 'https://apis.is/car?number=';
 
 document.addEventListener('DOMContentLoaded', function () {
   const cars = document.querySelector('.cars');
@@ -64,7 +64,7 @@ const program = (() => {
       .catch((error) => {
         displayError('Villa!');
         console.error(error);
-      })
+      });
   }
 
   function onSubmit(e) {
